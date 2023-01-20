@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Verbindung css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <!-- Header Hintergrund -->
+        <div id="headerBalken">
+        
+            <!-- Hallo User  -->
+            <div class="container-header">
+
+                <h1>Hallo <span id="username"></span></h1>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <nav class="navigation">
+
+                <a href="/parkplatz.html" class="ButtonLinks">
+
+                    <button id="neuerParkplatz"> Mein Parkplatz</button>
+                    
+                </a>
+
+                <button id="logout" onclick="logout()"> Logout </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="filterButton">
+        <button id="button-ParkplatzFiltern" onclick="holeParkplatzFuerFiltern_function()"> Nur verfügbare Parkplätze anzeigen </button>
+        <button class="hidden" id="button-AlleParkplaetze" onclick="holeAlleParkplaetze_function()"> Alle Parkplätze anzeigen </button>
+    </div>
+
+    <div id="liste-parkplatz"> </div>
+
+
+    <!--Einbindung Javascript index-->
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Verbindung css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+
+
+
+<body class="loginBody">
+    <div id="Login">
+
+        <h1>Login</h1>
+
+
+
+        <!-- Mit dem HTML Element type="email" wird auf die eingabe auf die richtigkeit von einem email format überprüft  -->
+        <label for="" class="Text" id="email_style">E-Mailadresse</label>
+        <input type="email" class="Input" id="id_mail_html">
+           
+        
+
+        <!-- Mit dem HTML Element type="password" wird das Passwort beim Tippen im Registrierungsfeld mit Punkten ersetzt und dadurch das Passwort nicht für alle sichtbar angezeigt -->
+        <label for="" class="Text">Passwort</label>
+        <input type="password" class="Input" id="id_password_html">
+        
+
+
+            <div>
+                <a href="/registrieren.html" class="ButtonLinks">
+                <button class="registrierenAufrufen">Ich habe noch keinen Account</button>
+                </a>
+                <button class="Loginbutton" onclick="login_function()"> Login </button>
+            </div>
+    
+
+        <!-- Ausgabe von var_data aus dem login.js  -->
+        <p id="id_nachricht_html"></p>
+
+    </div>
+
+
+
+
+    <!--Einbindung Javascript login-->
+    <script src="js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Allgemein */
+/* Allgemein */
+/* Allgemein */
+/* Allgemein */
+
+
+/* Schriftart */
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* Header */
+/* Header */
+
+    /* Dunkler Balken, oben and er Homepage */
+    #headerBalken {
+    /* background-color: rgba(75, 163, 195, 1); */
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-top: 0.5%;
+    }
+
+        /* Navigation div */
+        .navigation {
+            flex: 1;
+        }
+
+            /* Inhalt von Navigation div */
+            nav {
+                text-align: right;
+            }
+
+                /* Navigation Buttons */
+                button {
+                    background-color: rgba(23, 86, 118, 1);
+                    border: none;
+                    border-radius: 9px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    display: inline-block;
+                    font-size: 16px;
+                    cursor: pointer;
+                    margin-left: 2em;            
+                }
+
+        /* Hallo User div */
+        .container-header {
+            flex: 1;
+        }
+
+            /* Hallo User Text */
+            h1 {
+                color: rgba(23, 86, 118, 1);
+                font-size: 3em;
+            }
+
+
+body {
+    background-color: rgb(195, 227, 245);
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: rgba(23, 86, 118, 1);
+}
+
+p {
+   color: rgba(39, 41, 50, 1);
+   margin-top: 1em;  
+}
+    
+/* Links */
+a {
+    color: rgba(39, 41, 50, 1);
+    margin-top: 2em;  
+}
+
+.ButtonLinks {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Homepage */
+/* Homepage */
+/* Homepage */
+/* Homepage */
+
+
+/* Parkpaltz Grid Blöcke */
+/* zu finden im script.js in der "ParkplatzAnzeigen_function"  */
+.parkplatz {
+    /* background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(75, 163, 195, 1) 50%); */
+    background-color: rgb(240, 249, 254);
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    height: 40em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parkplatz-image {
+    object-fit: cover;
+    max-width: 100%;
+    height: 65%;
+    margin-top: 1em;
+
+}
+
+/* Grid der Parkplätze */
+#liste-parkplatz {
+    display: grid;
+    gap: 1%;
+    row-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 2em;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 4%;
+    /* background-color: aquamarine; */
+}
+
+.parkplatzBeschreib{
+    margin-top: 0.5em;
+}
+
+.parkplatzMaps {
+    margin-top: 1em;
+}
+
+.parkplatzEmail {
+    background-color: rgba(23, 86, 118, 1);
+    margin-left: 0em;
+}
+
+.filterButton {
+    margin-top: 2em;
+}
+
+#button_ParkplatzFiltern {
+    margin-left: 1%;
+}
+
+
+
+
+
+
+
+
+
+/* Parkplatz */
+/* Parkplatz */
+/* Parkplatz */
+/* Parkplatz */
+
+.MeinParkplatz {
+    margin-left: 2em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+#meinParkplatz {
+    margin-left: 5em;
+}
+
+input {
+    margin: 10px;
+}
+
+textarea {
+    margin: 10px;
+    width: 50%;
+}
+
+.dropdown{
+    margin: 10px;  
+}
+
+.hidden {
+    display: none;
+}
+
+.userloeschen {
+    margin-top: 8em;
+}
+
+.textUserloeschen {
+    margin-left: 5em;
+    margin-bottom: 0.5em;
+}
+
+#button-userLoeschen {
+    background-color: rgb(0, 0, 0);
+    margin-left: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+/* Loggin & registrieren */
+/* Loggin & registrieren */
+/* Loggin & registrieren */
+/* Loggin & registrieren */
+
+
+.Text {
+    margin-top: 2em;
+}
+
+.Input {
+    margin-top: 1em;
+    margin-bottom: 0em;
+}
+
+
+
+
+/* Login  */
+
+.loginBody {
+    background-color: rgb(195, 227, 245);
+}
+
+
+#Login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 30em;
+    padding-top: 10em;
+}
+
+
+.Loginbutton {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+
+.registrierenAufrufen {
+    margin: 0em;
+}
+
+
+
+
+/* registrieren  */
+
+.registrierenBody {
+    background-color: rgb(195, 227, 245);
+}
+
+
+#Registrieren {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 30em;
+    padding-top: 10em;
+}
+
+
+.registrierenbutton {
+    margin-top: 2em;
+    margin-left: 0em;
+}
+
+.loginAufrufen {
+    margin-left: 2em;
+}

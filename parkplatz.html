@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkgapshare</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <div id="headerBalken">
+        
+            <!-- Mein parkplatz  -->
+            <div class="container-header">
+
+                <h1>Mein Parkplatz</h1>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <nav class="navigation">
+
+                <a href="/index.html" class="ButtonLinks">
+
+                    <button id="neuerParkplatz"> Alle Parkplätze</button>
+                    
+                </a>
+
+                <button id="logout" onclick="logout()"> Logout </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <h2 id="infoText" class="MeinParkplatz"> </h2>
+
+
+    <div id="meinParkplatz">
+
+
+        <label for="adresse">Adresse</label> <br>
+        <input id="adresse" type="text" value=""> <br>
+
+        <label for="beschreibung">Beschreibung</label> <br>
+        <textarea id="beschreibung" name="beschreibung"> </textarea> <br> <br>
+
+        <label for="bild">Bild URL</label> <br>
+        <input id="bild" type="text"> <br>
+        <img id="bild-vorschau" width="300px" src="" alt=""> <br>
+        <br>
+
+        <label for="stadt">Nächste Stadt</label> <br>
+        <select class="dropdown" name="stadt" id="stadt">
+            <option value="1">Zürich</option>
+            <option value="2">Basel</option>
+            <option value="3">Luzern</option>
+        </select> <br> <br>
+
+
+        <p>Status</p>
+        <input type="radio" id="status-frei" name="status" value="1">
+        <label for="status-frei">Verfügbar</label><br>
+
+        <input type="radio" id="status-besetzt" name="status" value="0">
+        <label for="status-besetzt">Nicht Verfügbar</label><br>
+
+        <button class="hidden" id="button-neue" onclick="neuerParkplatz_function()">Veröffentlichen</button>
+        <button class="hidden" id="button-aktualisieren" onclick="aktualisiereParkplatz()">Aktualisieren</button>
+        <button class="hidden" id="button-loeschen" onclick="loescheParkplatz()">Löschen</button>
+
+        <p id="nachricht"> </p>
+
+    </div>
+
+    <div class="userloeschen">
+        <p class="textUserloeschen"> Bitte lösche zuerst deinen Parkplatz</p>
+        <button id="button-userLoeschen" onclick="userloeschen()">Account Löschen</button>
+    </div>
+
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/parkplatz.js"></script>
+
+</body>
+
+</html>

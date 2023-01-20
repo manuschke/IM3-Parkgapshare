@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrieren</title>
+
+
+
+    <!-- Verbindung css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+
+
+
+<body class="registrierenBody">
+    <div id="Registrieren"> 
+
+        <h1>Registrieren</h1>
+
+
+
+        <!-- Mit dem HTML Element type="email" wird auf die eingabe auf die richtigkeit von einem email format überprüft  -->
+        <label for="" class="Text">E-Mailadresse</label>
+        <input type="email" class="Input" id="id_mail_html">
+
+
+
+        <!-- Inputfelder -->
+        <label for="" class="Text">Benutzernamen</label>
+        <input type="text" class="Input" id="id_benutzername_html">
+        
+
+        
+        <!-- Inputfelder -->
+        <label for="" class="Text">Autonummer</label>
+        <input type="text" class="Input" id="id_autonummer_html">
+        
+        
+
+        <!-- Mit dem HTML Element type="password" wird das Passwort beim Tippen im Registrierungsfeld mit Punkten ersetzt und dadurch das Passwort nicht für alle sichtbar angezeigt -->
+        <label for="" class="Text">Passwort</label>
+        <input type="password" class="Input" id="id_password_html">
+    
+
+
+            <div>
+                <button onclick="registrieren_function()" class="registrierenbutton"> Registrieren </button>
+                <a href="/Login.html" class="">
+                <button class="loginAufrufen">Zum Login</button>
+                </a>
+            </div>
+
+
+        <!-- Ausgabe von var_data aus dem registrieren.js  -->
+        <p id="id_nachricht_html"></p>
+    </div>
+
+
+
+
+    <!--Einbindung Javascript login-->
+    <script src="js/registrieren.js"></script>
+</body>
+
+</html>
